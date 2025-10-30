@@ -1,0 +1,7 @@
+a = list(map(int,input('hãy nhập những số nguyên dương ( cách nhau bằng dấu cách) :').split()))
+tong = sum(a)
+trung_binh= tong/len(a)
+gia_tri_lon_nhat= max(a)
+print('tổng các số trên là : ', tong)
+print('trung bình các số trên là :', trung_binh)
+print('giá trị lớn nhất của các số trên là :',gia_tri_lon_nhat)
