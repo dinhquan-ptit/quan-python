@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUÁN PHỞ CỒ NAM ĐỊNH</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+#d1{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('pho-6760890_1280.jpg');
+    background-size:cover;
+    background-position:center;
+    height:50vw;
+    position:relative;
+}
+.logo{
+    position:absolute;
+    top:15px;
+    left:700px;
+}
+.text{
+    position:absolute;
+    top:75px;
+    left:680px;
+    transform:translateY(-50%);
+}
+.text p{
+    animation: nhay 1s infinite;
+}
+@keyframes nhay{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
+}
+.text p{
+    color:rgb(199, 86, 25);
+    margin:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+
+}
+.search-box{
+    position:absolute;
+    top:15px;
+    right:130px;
+    padding:20px 20px;
+    border-radius:20px;
+    border:none;
+}
+.menu-box{
+    position:absolute;
+    top:90px;
+    left:50%;
+    transform:translateX(-50%);
+    width:80%;
+    background:rgba(255,255,255,0.9);
+    border-radius:50px;
+    padding:10px 30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+.menu p{
+    margin:0;
+    color:#333;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu p:hover{
+    color:#e67e22;
+}
+.btn{
+    background:#e67e22;
+    border:none;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#cf711f;
+}
+.arrow{
+    position:absolute;
+    bottom:0;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.arrow1{
+    width:500px;
+    right:520px;
+}
+
+.arrow2{
+    width:250px;
+    right:270px;
+}
+
+.arrow3{
+    width:250px;
+    left:243px;
+}
+
+@media (max-width:1000px){
+    .arrow{
+        display:none;
+    }
+}
+#menu-food{
+    padding:80px 5%;
+    text-align:center;
+}
+
+.menu-title{
+    font-size:40px;
+    margin-bottom:50px;
+    color:#5a2c0f;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.food-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.food-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.food-info{
+    padding:20px;
+}
+
+.food-info h3{
+    margin:10px 0;
+}
+
+.food-info p{
+    color:#c0392b;
+    font-weight:bold;
+    margin:0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="d1">
+
+    <img class="logo" src="https://icolor.vn/wp-content/uploads/2024/09/Logo-quan-pho-7.jpg" width="90px">
+
+    <input type="text" placeholder="Tìm món..." class="search-box">
+
+    <div class="menu-box">
+        <div class="menu">
+            <p>TRANG CHỦ</p>
+            <p>GIỚI THIỆU</p>
+            <p>THỰC ĐƠN</p>
+            <p>ƯU ĐÃI</p>
+            <p>LIÊN HỆ</p>
+            <p>ĐÁNH GIÁ</p>
+            <button class="btn">Đặt Món</button>
+        </div>
+    </div>
+    <div class="text">
+        <p>PHỞ CỒ NAM ĐỊNH</p>
+    </div>
+    <img class="arrow arrow1" src="ChatGPT Image Mar 23, 2026, 07_32_46 PM.png">
+    <img class="arrow arrow2" src="z7614407797658_bb4ce6acafe87ff2a4758861e1dd2943.jpg">
+    <img class="arrow arrow3" src="ChatGPT Image Mar 15, 2026, 03_46_11 PM.png">
+
+</div>
+<div id="menu-food">
+    <h2 class="menu-title">BEST SELLER</h2>
+
+    <div class="food-grid">
+
+        <div class="food-card">
+            <img src="phodacbiet.jpg">
+            <div class="food-info">
+                <h3>Phở Đặc Biệt</h3>
+                <p>50.000đ</p>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="myxao.png">
+            <div class="food-info">
+                <h3>Mỳ Xào Hải Sản</h3>
+                <p>40.000đ</p>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="comrang.png">
+            <div class="food-info">
+                <h3>Cơm Rang Thập Cẩm</h3>
+                <p>50.000đ</p>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="phoxao.png">
+            <div class="food-info">
+                <h3>Phở Xào Bò</h3>
+                <p>55.000đ</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
